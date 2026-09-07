@@ -40,7 +40,7 @@ if uploaded_file is not None:
         else:
             try:
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel('models/gemini-2.5-flash')
+                model = genai.GenerativeModel('models/gemini-3.6-flash')
                 
                 # Aryadaki sources klasöründen tüm metinleri çekiyoruz
                 library_knowledge = load_sources_from_folder()
